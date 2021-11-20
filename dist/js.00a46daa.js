@@ -172,7 +172,7 @@ var CLASS_LIST = [OBJECT_TYPE.BLANK, OBJECT_TYPE.WALL, OBJECT_TYPE.DOT, OBJECT_T
 exports.CLASS_LIST = CLASS_LIST;
 var LEVEL = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 7, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 7, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 1, 2, 1, 2, 1, 9, 9, 9, 9, 1, 2, 1, 2, 1, 0, 0, 0, 1, 1, 1, 1, 2, 1, 2, 1, 9, 9, 9, 9, 1, 2, 1, 2, 1, 1, 1, 1, 1, 0, 0, 0, 2, 2, 2, 1, 9, 9, 9, 9, 1, 2, 2, 2, 0, 0, 0, 1, 1, 1, 1, 1, 2, 1, 2, 1, 9, 9, 9, 9, 1, 2, 1, 2, 1, 1, 1, 1, 0, 0, 0, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 1, 2, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 7, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 7, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 exports.LEVEL = LEVEL;
-},{}],"js/GhostMoves.js":[function(require,module,exports) {
+},{}],"js/ghostMoves.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -603,7 +603,7 @@ module.exports = "/eat_ghost.09613325.wav";
 
 var _setup = require("./setup");
 
-var _GhostMoves = require("./GhostMoves");
+var _ghostMoves = require("./ghostMoves");
 
 var _GameBoard = _interopRequireDefault(require("./GameBoard"));
 
@@ -735,7 +735,7 @@ function startGame() {
   document.addEventListener("keydown", function (e) {
     pacman.handleKeyInput(e, gameBoard.objectExist);
   });
-  var ghosts = [new _Ghost.default(5, 188, _GhostMoves.randomMovement, _setup.OBJECT_TYPE.BLINKY), new _Ghost.default(4, 209, _GhostMoves.randomMovement, _setup.OBJECT_TYPE.PINKY), new _Ghost.default(3, 230, _GhostMoves.randomMovement, _setup.OBJECT_TYPE.INKY), new _Ghost.default(2, 251, _GhostMoves.randomMovement, _setup.OBJECT_TYPE.CLYDE)];
+  var ghosts = [new _Ghost.default(5, 188, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.BLINKY), new _Ghost.default(4, 209, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.PINKY), new _Ghost.default(3, 230, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.INKY), new _Ghost.default(2, 251, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.CLYDE)];
   timer = setInterval(function () {
     return gameLoop(pacman, ghosts);
   }, GLOBAL_SPEED);
@@ -743,7 +743,7 @@ function startGame() {
 
 
 startButton.addEventListener("click", startGame);
-},{"./setup":"js/setup.js","./GhostMoves":"js/GhostMoves.js","./GameBoard":"js/GameBoard.js","./Pacman":"js/Pacman.js","./Ghost":"js/Ghost.js","../sounds/munch.wav":"sounds/munch.wav","../sounds/pill.wav":"sounds/pill.wav","../sounds/game_start.wav":"sounds/game_start.wav","../sounds/death.wav":"sounds/death.wav","../sounds/eat_ghost.wav":"sounds/eat_ghost.wav"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./setup":"js/setup.js","./ghostMoves":"js/ghostMoves.js","./GameBoard":"js/GameBoard.js","./Pacman":"js/Pacman.js","./Ghost":"js/Ghost.js","../sounds/munch.wav":"sounds/munch.wav","../sounds/pill.wav":"sounds/pill.wav","../sounds/game_start.wav":"sounds/game_start.wav","../sounds/death.wav":"sounds/death.wav","../sounds/eat_ghost.wav":"sounds/eat_ghost.wav"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -771,7 +771,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62977" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63281" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
