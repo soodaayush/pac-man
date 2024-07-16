@@ -149,18 +149,18 @@ var DIRECTIONS = exports.DIRECTIONS = {
   }
 };
 var OBJECT_TYPE = exports.OBJECT_TYPE = {
-  BLANK: 'blank',
-  WALL: 'wall',
-  DOT: 'dot',
-  BLINKY: 'blinky',
-  PINKY: 'pinky',
-  INKY: 'inky',
-  CLYDE: 'clyde',
-  PILL: 'pill',
-  PACMAN: 'pacman',
-  GHOST: 'ghost',
-  SCARED: 'scared',
-  GHOSTLAIR: 'lair'
+  BLANK: "blank",
+  WALL: "wall",
+  DOT: "dot",
+  BLINKY: "blinky",
+  PINKY: "pinky",
+  INKY: "inky",
+  CLYDE: "clyde",
+  PILL: "pill",
+  PACMAN: "pacman",
+  GHOST: "ghost",
+  SCARED: "scared",
+  GHOSTLAIR: "lair"
 };
 
 // Lookup array for classes
@@ -704,7 +704,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60269" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50689" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
