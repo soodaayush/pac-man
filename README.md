@@ -8,11 +8,11 @@ I wanted to learn about making simple games in a website so I decided Pac Man wi
 
 ## Challenges
 
-Programming the functionality behind the characters, movements, the game borders, etc.
+Programming the functionality behind characters, movements, the game borders, etc.
 
 ## Lessons Learned
 
-I learned the fundamentals of JavaScript classes through the character files and how the use of them creates better organization. I also learned about using Parcel to build websites.
+I learned the fundamentals of JavaScript classes through the character files and how using them creates better organization. I also learned about using Parcel to build websites.
 
 ## The Website
 
