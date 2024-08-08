@@ -311,7 +311,7 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
 var _setup = require("./setup");
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var GameBoard = /*#__PURE__*/function () {
   function GameBoard(DOMGrid) {
     var _this = this;
@@ -405,7 +405,7 @@ exports.default = void 0;
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 var _setup = require("./setup");
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var Pacman = /*#__PURE__*/function () {
   function Pacman(speed, startPos) {
     (0, _classCallCheck2.default)(this, Pacman);
@@ -481,7 +481,7 @@ var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 var _setup = require("./setup");
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var Ghost = /*#__PURE__*/function () {
   function Ghost(speed, startPos, movement, name) {
     (0, _classCallCheck2.default)(this, Ghost);
@@ -560,7 +560,7 @@ var _pill = _interopRequireDefault(require("../sounds/pill.wav"));
 var _game_start = _interopRequireDefault(require("../sounds/game_start.wav"));
 var _death = _interopRequireDefault(require("../sounds/death.wav"));
 var _eat_ghost = _interopRequireDefault(require("../sounds/eat_ghost.wav"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 // Classes
 
 // Sounds
@@ -704,7 +704,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64050" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54069" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
