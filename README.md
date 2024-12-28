@@ -4,11 +4,11 @@
 
 ## Inspiration
 
-I wanted to learn about making simple games in a website so I decided Pac Man will be the best one to build.
+I wanted to learn about making simple games in a website so I decided Pac Man would be the best for a starter project.
 
 ## Challenges
 
-Programming the functionality behind characters, movements, the game borders, etc.
+Programming the functionality behind characters, movements, game borders, etc.
 
 ## Lessons Learned
 
@@ -16,7 +16,7 @@ I learned the fundamentals of JavaScript classes through the character files and
 
 ## The Website
 
-This is the Pac Man game on a website. You can control the character through arrow keys.
+This is the Pac Man game on a website. You can control Pac Man through arrow keys.
 
 ## Links
 
