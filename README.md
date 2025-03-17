@@ -1,6 +1,6 @@
 # Pac Man
 
-![pac-man](https://github.com/user-attachments/assets/a2e277e3-f9e8-439d-96bc-f31901f12150)
+![pac-man](https://github.com/user-attachments/assets/f2c1d8ed-afa3-4cd5-9dc4-7a8789377adc)
 
 ## Inspiration
 
